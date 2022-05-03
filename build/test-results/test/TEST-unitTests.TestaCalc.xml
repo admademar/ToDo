@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="unitTests.TestaCalc" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-05-03T02:14:44" hostname="ADEMARFR-HP" time="0.047">
+  <properties/>
+  <testcase name="testarDividirDoisNumeros" classname="unitTests.TestaCalc" time="0.016"/>
+  <testcase name="testarMultiplicarDoisNumeros" classname="unitTests.TestaCalc" time="0.0"/>
+  <testcase name="testarSomarDoisNumeros" classname="unitTests.TestaCalc" time="0.0"/>
+  <testcase name="testarSubtrairDoisNumeros" classname="unitTests.TestaCalc" time="0.016"/>
+  <system-out><![CDATA[************************************
+* Resultado do Calculo Dividir     *
+* Resultado Esperado>>  5          *
+* Resultado Atual>>     5          *
+************************************
+************************************
+* Resultado do Calculo Multiplicar *
+* O Resultado Esperado>>  25       *
+* O Resultado Atual   >>  25       *
+************************************
+************************************
+* Resultado do Calculo Somar       *
+* O Resultado Esperado e:  12      *
+* O Resultado Atual foi:  12       *
+************************************
+************************************
+* Resultado do Calculo Subtrair    *
+* O Resultado Esperado>>  15       *
+* O Resultado Atual>>  15          *
+************************************
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
