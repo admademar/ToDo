@@ -2,6 +2,8 @@
 package devcalc;
 // 2 - Bibliotecas
 
+import com.sun.corba.se.spi.extension.ZeroPortPolicy;
+
 import java.util.Scanner;
 
 // 3 - Classe
@@ -28,14 +30,14 @@ public class Calc {
 
 
             System.out.print("Entre Com 1º Numero:>  ");
-             num1 = entrada.nextInt();
+            num1 = entrada.nextInt();
 
             System.out.print("Entre Com 2º Numero:>  ");
-             num2 = entrada.nextInt();
+            num2 = entrada.nextInt();
             System.out.print("O Resultado é:>>>>>>>  ");
         }
         //Chama a função para Calculo
-        switch (opcao){
+        switch (opcao) {
             case 1:
                 System.out.println(somarDoisNumeros(num1, num2));
                 break;
@@ -55,21 +57,31 @@ public class Calc {
                 break;
 
         }
-        //System.out.println("Passou Pelo Método main");
+
 
     }
-    public static int somarDoisNumeros(int num1, int num2){
-      //  System.out.println("Passou Pelo Método somarDoisNumeros");
+
+    public static int somarDoisNumeros(int num1, int num2) {
+
         return num1 + num2;
     }
-    public static int subtrairDoisNumeros(int num1, int num2){
+
+    public static int subtrairDoisNumeros(int num1, int num2) {
         return num1 - num2;
     }
-    public static int multiplicarDoisNumeros(int num1, int num2){
+
+    public static int multiplicarDoisNumeros(int num1, int num2) {
         return num1 * num2;
     }
-    public static int dividirDoisNumeros(int num1, int num2){
-        return num1 / num2;
-    }
+    public static int dividirDoisNumeros(int num1, int num2) {
+        try {
+            return num1 / num2;
+        } catch (Exception e) {
+            System.out.println("ZeroDivisionError");
 
+
+        }
+
+        return num1;
+    }
 }

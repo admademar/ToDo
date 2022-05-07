@@ -60,23 +60,24 @@ public class TestaCalc {
         assertEquals(resultadoEsperado, resultadoAtual);
     }
     @Test
-    public void testarDividirDoisNumeros(){
-        // 1 - Preparar/Configurar - Given
+    public void testarDividirDoisNumeros() {
+            // 1 - Preparar/Configurar - Given
 
-        int num1 = 25;
-        int num2 = 5;
-        int resultadoEsperado = 5;
+         int num1 = 25;
+         int num2 =  5;
+         int  resultadoEsperado = 5;
 
-        // 2 - Executar - When
-       int resultadoAtual = Calc.dividirDoisNumeros(num1, num2);
+            // 2 - Executar - When
+            int resultadoAtual = Calc.dividirDoisNumeros(num1, num2);
 
-        // 3 - Validar - Then
-        System.out.println("************************************");
-        System.out.println("* Resultado do Calculo Dividir     *");
-        System.out.println("* Resultado Esperado>>  "+resultadoEsperado+"          *");
-        System.out.println("* Resultado Atual>>     "+resultadoAtual+"          *");
-        System.out.println("************************************");
-        assertEquals(resultadoEsperado, resultadoAtual);
+            // 3 - Validar - Then
+            System.out.println("************************************");
+            System.out.println("* Resultado do Calculo Dividir     *");
+            System.out.println("* Resultado Esperado>>  " + resultadoEsperado + "          *");
+            System.out.println("* Resultado Atual>>     " + resultadoAtual + "          *");
+            System.out.println("************************************");
+            assertEquals(resultadoAtual, resultadoEsperado);
+        }
+
     }
 
-}
